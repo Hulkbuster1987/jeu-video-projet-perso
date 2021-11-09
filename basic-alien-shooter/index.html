@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+
+<div class="gameArea">
+    <div class='fs fsGreen' onclick="countPoints(10)"></div>
+    <div class='fs fsBlue' onclick="countPoints(20)"></div>
+    <div class='fs fsRed' onclick="countPoints(50)"></div>
+</div>
+
+<div class="score">
+    SCORE: &nbsp;
+    <span class="points">0</span>
+</div>
+ 
+<div class="goalscore">
+    GOALSCORE: &nbsp;
+    <span class="goalpoints">0</span>
+</div>
+
+<div class="ammunitions">
+    MAGAZINE: &nbsp;
+    <span class="ammunition-unit"></span>
+</div>
+
+<div class="stage-number">
+    LEVEL <span class="number"></span>
+
+</div>
+
+<p id="win-message">you win</p>
+<p id="lose-message">you lose</p>
+
+<button class="continue" onclick="nextStage()">next stage</button>
+
+</body>
+
+
+</html>
